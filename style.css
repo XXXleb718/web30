@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+textarea {
+    vertical-align: top;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-line {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.form-line input {
+    width: 390px;
+    height: 25px;
+}
+
+.form-line textarea {
+    width: 392px;
+}
+
+.names input {
+    height: 35px;
+}
+
+.names {
+    display: flex;
+    max-width: 500px;
+    justify-content: space-between;
+}
+
+.names .form-line {
+    width: 48%;
+}
+
+@media (max-width: 900px) {
+    .form-line input {
+        width: 100%;
+        height: 25px;
+    }
+    .form-line {
+        width: 100%;
+        max-width: 900px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 5px 0;
+    }
+    .form-line label {
+        flex: 1;
+    }
+    .form-line input {
+        flex: 3;
+    }
+    .names {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .form-line textarea {
+        width: 100%;
+    }
+    .names .form-line{
+        width: 100%;
+    }
+}
+
+.error {
+    border: 1px solid red;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <select name="en" id="">
+            <option value="en">en</option>
+            <option value="ru">ru</option>
+        </select>
+        <h1>Form title</h1>
+        <form action="form.php" method="post" class="form" id="form">
+            <div class="names">
+                <div class="form-line"><label>first name*: </label><input type="text" id="f_name" name="f_name"></div>
+                <div class="form-line"><label>last name*: </label><input type="text" id="l_name" name="l_name"></div>
+            </div>
+            <div class="form-line"><label>email*:</label><input type="text" id="email" name="email"></div>
+            <div class="form-line"><label>company:</label><input type="text" id="company" name="company"></div>
+            <div class="form-line"><label>city*:</label> <input type="text" id="city" name="city"></div>
+            <div class="form-line"><label>message*: </label><textarea cols="30" rows="10"
+                    id="message" name="message"></textarea></div>
+            <div><input type="submit" value="Send" id="button"></div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
